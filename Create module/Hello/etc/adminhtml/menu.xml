@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+      <add id="QND_Hello::greetings" 
+      title="Greetings" 
+      translate="title" 
+      module="QND_Hello" 
+      parent="Magento_Backend::content" 
+      sortOrder="50" 
+      dependsOnModule="QND_Hello" 
+      resource="QND_Hello::greetings"/>
+      
+      <add id="QND_Hello::greetings_helloworld" 
+      title="Hello World" 
+      translate="title" 
+      module="QND_Hello" 
+      parent="QND_Hello::greetings" 
+      sortOrder="10" 
+      dependsOnModule="QND_Hello" 
+      action="hello/helloworld" 
+      resource="QND_Hello::greetings"/>
+    </menu>
+</config>
